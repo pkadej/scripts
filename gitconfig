@@ -1,0 +1,25 @@
+# Add lines below in your ~/.gitconfig
+# [include]
+#   path = /path/to/this/file/gitconfig
+
+[user]
+    name = Przemysław Kadej
+    email = przemyslaw[at]kadej[dot]org
+[merge]
+    tool = meld
+[alias]
+    s = status
+    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    f = "!git ls-files | grep -i"
+    ca = commit --amend
+    cb = checkout -b
+    co = checkout
+    br = branch
+    c = commit
+    st = status
+    last = log -1 HEAD
+    b = branch
+    bd = branch -D
+[core]
+    editor = 'vim'
